@@ -1,0 +1,8 @@
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 69%;
+    text-decoration: none;
+    color: plum;
+}
