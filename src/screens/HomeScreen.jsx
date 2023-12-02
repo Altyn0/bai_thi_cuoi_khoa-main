@@ -37,8 +37,12 @@ const HomeScreens = () => {
     getTasks();
   }
 
-  const handleCompleteTask = (val) =>{
-    console.log('Completed',val);
+  const handleCompleteTask = (val,index) =>{
+    const items = [...tasks]
+    const item = items[index];
+    item.isCompleted = val
+    localStorage.setItem(LOCAL_DATA_NAME.tasks,JSON.stringify(items));
+    getTasks();
   }
 
   const handleAddNewTask = () =>{

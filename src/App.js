@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter  >
-      <h1 style={{ textAlign: 'center' }}>#Todo</h1>
-      <div className='link' style={{ fontSize: '100', display: 'flex', justifyContent: 'space-around', margin:'2%',}}>
+      <h1 style={{ textAlign: 'center', color:'red' }}>#Todo</h1>
+      <div  style={{ fontSize: '100', display: 'flex', justifyContent: 'space-around', margin:'2%',}}>
        
         <Link to='/'>All</Link>
         <Link to='/Active'>Active</Link>
